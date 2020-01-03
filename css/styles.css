@@ -37,3 +37,9 @@ body {
   justify-content: space-around;
   flex-direction: row;
 }
+
+.border {
+  border-color: red;
+  border-width: 3px;
+  border-style: solid;
+}
