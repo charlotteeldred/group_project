@@ -1,5 +1,6 @@
 body {
   padding-top: 5rem;
+  background-color: grey;
 }
 
 .landing_text {
@@ -31,11 +32,22 @@ body {
 
 .parent {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+}
+
+.child {
+  background-color: rgba(255,255,255,0.3);
+  width:20%;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.3vw;
 }
 
 .border {
