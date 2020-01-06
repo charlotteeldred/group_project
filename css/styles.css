@@ -9,10 +9,11 @@ a {
   font-weight: 600;
 }
 
-.container-fluid,.container {
+.container-fluid, .container {
   padding-top: 2rem;
   padding-left: 0rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .landing_text em {
@@ -26,6 +27,11 @@ a {
 
 .nav-link {
   font-size: 1.25vw;
+}
+
+.map {
+  height: 400px;
+  width: 50%
 }
 
 .nav-tabs {
@@ -54,6 +60,14 @@ a {
   width: 70%;
 }
 
+.navbar-custom {
+  background-color: #474853;
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text, .navbar-custom .navbar-nav .nav-link {
+    color: #EAE7DC;
+}
+
 .landing_image {
   width: 70%;
   padding-right: 2rem;
@@ -68,12 +82,12 @@ a {
   font-size: 5vw;
 }
 
-.cheeseboard_description.landing_text h1 {
+.cheeseboard_description.landing_text h1, .about_text h1 {
   font-size: 4.5vw;
   padding-right: 2rem;
 }
 
-.cheeseboard_description p {
+.cheeseboard_description p, .about_text p {
   font-size:1.5vw;
 }
 

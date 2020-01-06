@@ -13,9 +13,9 @@
 
   <body>
 
-    <nav class="navbar sticky-top navbar-expand navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand navbar-custom">
       <a class="navbar-brand" href="index.html">
-        <img src="images/grater.png" height="30" class="d-inline-block align-top" alt="">
+        <img src="images/grater-white.png" height="30" class="d-inline-block align-top" alt="">
         Grate Expections
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +23,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="about.html">About us</a>
-          <a class="nav-item nav-link" href="build-board.html">Build your board<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="about.html">About us<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="build-board.html">Build your board</a>
         </div>
       </div>
     </nav>
@@ -46,7 +46,7 @@
           <div class="cheeseboard_description">
             <h1>BUILD<br>YOUR<br>BOARD</h1>
             <br>
-            <p><em>Select a hard, soft and a blue cheese to build your perfect cheeseboard</em></p>
+            <p><em>Select a hard, a soft and a blue cheese to build your perfect cheeseboard</em></p>
           </div>
 
           <div class="cheeseboard_image">
@@ -133,8 +133,18 @@
           </div>
         </div>
 
-      <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-      <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+        <div class="cheeseboard">
+
+          <div id="map" class="map"></div>
+          <div><h1>Your Cheese Map</h1></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOiGdhb4nzc6qEGTACgGHcqtS8gGnTlm4&callback=initMap"
+        async defer></script>
+
+
+        <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+        <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+
       </div>
     </div>
   </body>
