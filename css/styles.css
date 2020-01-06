@@ -29,6 +29,11 @@ a {
   font-size: 1.25vw;
 }
 
+.nav-tabs {
+  background-color: #BAB2B5;
+  border-bottom: 0px;
+}
+
 .landing_btns {
   font-size: 1.2em;
   margin-left: 20%;
