@@ -6,6 +6,9 @@ $( document ).ready(function(){
   $(".option1").click(function(){
     $(this).addClass('border');
     $(".option1").not(this).removeClass('border');
+    $(".selection1.text").addClass('hidden');
+    $(".selection1.cheesepic").hide();
+    $(".selection1.cheesepic."+this.id).show();
     });
 
   $(".option2").click(function(){
