@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>About Page</title>
+
   </head>
+
   <body>
 
     <nav class="navbar sticky-top navbar-expand navbar-custom">
@@ -48,5 +51,34 @@
         <img src="images/cheese-cake-1.png" alt="Picture of a cheese cake" width=22%>
         </div>
     </div>
+
+
+<div class="containerform">
+
+
+<h3>Get in Touch</h3>
+  <form action="/action_page.php">
+    <label for="fname">Name*</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+
+    <label for="email">Email*</label>
+    <input type="text" id="email" name="email" placeholder="Your email">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="United Kingdom">United Kingdom</option>
+    </select>
+
+    <label for="tellme">Tell me</label>
+    <textarea id="tellme" name="tellme" placeholder="What is your favourite cheese? " style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+
+
   </body>
 </html>
