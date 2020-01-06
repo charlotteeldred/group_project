@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title></title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/search/str/cheeseboard/photos-keyword?f=AbpYFw-X88BLvvib3FgUMsXAqwWBKhwTAVlm3a50EgOZob6x49a4Wy2Z3iiv8GFpkSBhMc33sSakgwkHQAZA7vCtBcf2CXCcRQwUYv0KTaBau6wNfGVkdxkvugb8BELeu4c&epa=SEE_MORE" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/hashtag/cheeseboard?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.google.co.uk/search?client=safari&source=hp&ei=o4ASXv-OA9CMa8TrrdgD&q=cheeseboard&oq=cheeseb&gs_l=psy-ab.1.1.0i131j0l2j0i131j0l5j0i10.6435.8221..9664...0.0..0.58.418.8......0....1..gws-wiz.....0.1oIyxOgTdpc" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://www.linkedin.com/search/results/content/?authorCompany=%5B%5D&authorIndustry=%5B%5D&contactInterest=%5B%5D&facetCity=%5B%5D&facetCompany=%5B%5D&facetConnectionOf=%5B%5D&facetCurrentCompany=%5B%5D&facetCurrentFunction=%5B%5D&facetGeoRegion=%5B%5D&facetGeoUrn=%5B%5D&facetGroup=%5B%5D&facetGuides=%5B%5D&facetIndustry=%5B%5D&facetNetwork=%5B%5D&facetNonprofitInterest=%5B%5D&facetPastCompany=%5B%5D&facetProfessionalEvent=%5B%5D&facetProfileLanguage=%5B%5D&facetRegion=%5B%5D&facetSchool=%5B%5D&facetSeniority=%5B%5D&facetServiceCategory=%5B%5D&facetState=%5B%5D&groups=%5B%5D&keywords=cheeseboard&origin=GLOBAL_SEARCH_HEADER&page=1&refresh=false&skillExplicit=%5B%5D&topic=%5B%5D" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/watch?v=8_n9aCePf94" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+
+      <div class="content">
+
+        <div class="cheeseboard_image">
+          <img src="images/woodboard.jpg" alt="A picture of an empty cheeseboard" width="100%"/>
+          <div class="parent">
+            <div class="child">
+              <p class="selection1 text">Choose a <br> soft cheese</p>
+              <img class="selection1 cheesepic wigmore" src="images/wigmore.png" alt="A picture of Wigmore cheese" width="100%"/>
+              <img class="selection1 cheesepic stinking_bishop" src="images/stinking_bishop.png" alt="A picture of Stinking Bishop cheese" width="100%"/>
+              <img class="selection1 cheesepic soft_goats" src="images/soft_goats.png" alt="A picture of Rigotte De Chévre cheese" width="100%"/>
+            </div>
+            <div class="child">
+              <p class="selection2 text">Choose a <br> hard cheese</p>
+              <img class="selection2 cheesepic rachel_goat" src="images/rachel_goat.png" alt="A picture of Rachel Goats cheese" width="100%"/>
+              <img class="selection2 cheesepic manchego" src="images/manchego.png" alt="A picture of Manchego cheese" width="100%"/>
+              <img class="selection2 cheesepic cheddar" src="images/cheddar.png" alt="A picture of Vintage Cave-Aged Cheddar cheese" width="100%"/>
+            </div>
+            <div class="child">
+              <p class="selection3 text">Choose a <br> blue cheese</p>
+              <img class="selection3 cheesepic blacksticks" src="images/blacksticks.png" alt="A picture of Blacksticks cheese" width="100%"/>
+              <img class="selection3 cheesepic roquefort" src="images/roquefort.png" alt="A picture of Roquefort cheese" width="100%"/>
+              <img class="selection3 cheesepic stilton" src="images/stilton.png" alt="A picture of Stilton cheese" width=100%/>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Soft Cheese</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hard Cheese</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Blue Cheese</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active imagecontainer" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <figure class="option1" id="wigmore">
+              <img class="image" src="images/wigmore.png" alt="A picture of Wigmore cheese"/>
+              <figcaption><strong>Wigmore</strong><br><em>British, unpasteurised, ewes milk</em><br>Creamy and light in flavour<br>Intensity: 2/5</figcaption>
+            </figure>
+            <figure class="option1" id="stinking_bishop">
+              <img class="image" src="images/stinking_bishop.png" alt="A picture of Stinking Bishop cheese"/>
+              <figcaption><strong>Stinking Bishop</strong><br><em>English, washed rind, cows milk</em><br>Nutty, rich and a bit smelly<br>Intensity: 3/5</figcaption>
+            </figure>
+            <figure class="option1" id="soft_goats">
+              <img class="image" src="images/soft_goats.png" alt="A picture of Rigotte De Chévre cheese"/>
+              <figcaption><strong>Rigotte De Chévre</strong><br><em>French, goats milk</em><br>Smooth and packs a punch<br>Intensity: 3/5</figcaption>
+            </figure>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <figure class="option2" id="rachel_goat">
+              <img class="image" src="images/rachel_goat.png" alt="A picture of Rachel Goats cheese"/>
+              <figcaption><strong>Rachel Goats</strong><br><em>English, goats milks</em><br>Semi-hard, light and well-rounded<br>Intensity: 2/5</figcaption>
+            </figure>
+            <figure class="option2" id="manchego">
+              <img class="image" src="images/manchego.png" alt="A picture of Manchego cheese"/>
+              <figcaption><strong>Manchego</strong><br><em>Spanish, ewes milk</em><br>Fruity tang with a soft mouth feel<br>Intensity: 3/5</figcaption>
+            </figure>
+            <figure class="option2" id="cheddar">
+              <img class="image" src="images/cheddar.png" alt="A picture of Vintage Cave-Aged Cheddar cheese"/>
+              <figcaption><strong>Vintage Cave-Aged Cheddar</strong><br><em>English, cows milk</em><br>Rich and crumbly with considerable bite<br>Intensity: 4/5</figcaption>
+            </figure>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <figure class="option3" id="blacksticks">
+              <img class="image" src="images/blacksticks.png" alt="A picture of Blacksticks cheese"/>
+              <figcaption><strong>Blacksticks Blue</strong><br><em>English, cows milk</em><br>Semi-soft, creamy and full of flavour<br>Intensity: 4/5</figcaption>
+            </figure>
+            <figure class="option3" id="roquefort">
+              <img class="image" src="images/roquefort.png" alt="A picture of Roquefort cheese"/>
+              <figcaption><strong>Roquefort</strong><br><em>French, cows milk</em><br>Creamy, very rich and strong aftertaste<br>Intensity: 5/5</figcaption>
+            </figure>
+            <figure class="option3" id="stilton">
+              <img class="image" src="images/stilton.png" alt="A picture of Stilton cheese"/>
+              <figcaption><strong>Stilton</strong><br><em>English, cows milk</em><br>Crumbly and nutty; it’s a classic for a reason<br>Intensity: 4/5</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+      <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
