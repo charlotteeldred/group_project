@@ -9,10 +9,11 @@ a {
   font-weight: 600;
 }
 
-.container-fluid,.container {
+.container-fluid, .container {
   padding-top: 2rem;
   padding-left: 0rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 .landing_text em {
@@ -26,6 +27,11 @@ a {
 
 .nav-link {
   font-size: 1.25vw;
+}
+
+.map {
+  height: 400px;
+  width: 50%
 }
 
 .nav-tabs {
