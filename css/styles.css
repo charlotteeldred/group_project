@@ -15,14 +15,13 @@ a {
   padding-right: 2rem;
 }
 
-.landing_text {
-  display: block;
-  text-align: center;
-  position: relative;
+.landing_text em {
+  font-size: 1.4vw;
 }
 
-.landing_text em {
-  font-size: 1.2em;
+.landing_text p {
+  font-size: 1.2vw;
+  text-align: center
 }
 
 .nav-link {
@@ -35,30 +34,43 @@ a {
 }
 
 .landing_btns {
-  font-size: 1.2em;
-  margin-left: 20%;
-  width: 50%;
+  font-size: 1.3em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: #AC3B61;
+  font-weight: 600;
 }
 
 .cheeseboard {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .cheeseboard_image {
   width: 70%;
 }
 
+.landing_image {
+  width: 70%;
+  padding-right: 2rem;
+}
+
 .cheeseboard_description {
-  width: 25%;
+  width: 30%;
+  text-align: center;
 }
 
 .cheeseboard_description h1 {
   font-size: 5vw;
+}
+
+.cheeseboard_description.landing_text h1 {
+  font-size: 4.5vw;
+  padding-right: 2rem;
 }
 
 .cheeseboard_description p {
@@ -84,7 +96,7 @@ a {
 }
 
 .text {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.4);
   padding: 15px;
   color: #F5F4EF;
 }
@@ -110,6 +122,23 @@ figure {
     vertical-align: top;
     width: 30%;
     padding: 5px;
+}
+
+.about_mixture {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+  height: 42rem;
+  margin-bottom: 2rem;
+}
+
+.about_text {
+  width: 38%;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 .image {
