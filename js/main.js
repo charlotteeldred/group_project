@@ -33,6 +33,27 @@ $( document ).ready(function(){
       $(".selection2.text").removeClass('hidden');
       $(".selection2.cheesepic."+this.id).hide();
     }
+    if ($(this).id = cheddar){
+      $(this).addClass('border');
+      $(".option2").not(this).removeClass('border');
+      $(".selection2.text").addClass('hidden');
+      $(".selection2.cheesepic").hide();
+      $(".selection2.cheesepic."+this.id).show();
+      function addMarker(location) {
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(location.lat, location.lng),
+          map: map
+        });
+        markers.push(marker);
+      }
+      addMarker(cheddar);
+      // Sets the map on all markers in the array.
+      function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
+    }
     else {
       $(this).addClass('border');
       $(".option2").not(this).removeClass('border');
@@ -41,23 +62,6 @@ $( document ).ready(function(){
       $(".selection2.cheesepic."+this.id).show();
       // map.addMarker(this.id.latLng);
       // Adds a marker to the map and push to the array.
-        if (this.id = cheddar){
-          function addMarker(location) {
-            var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(location.lat, location.lng),
-              map: map
-            });
-            markers.push(marker);
-          }
-          addMarker(cheddar);
-          // Sets the map on all markers in the array.
-          function setMapOnAll(map) {
-            for (var i = 0; i < markers.length; i++) {
-              markers[i].setMap(map);
-            }
-          }
-        }
-
     }
     });
 
