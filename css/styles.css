@@ -1,9 +1,168 @@
 body {
-  padding-top: 5rem;
+  background-color: #EAE7DC;
+  padding-left: 0rem;
+  color: #474853;
+}
+
+a {
+  color: #AC3B61;
+  font-weight: 600;
+}
+
+.container-fluid,.container {
+  padding-top: 2rem;
+  padding-left: 0rem;
+  padding-right: 2rem;
 }
 
 .landing_text {
   display: block;
   text-align: center;
   position: relative;
+}
+
+.landing_text em {
+  font-size: 1.2em;
+}
+
+.nav-link {
+  font-size: 1.25vw;
+}
+
+.nav-tabs {
+  background-color: #BAB2B5;
+  border-bottom: 0px;
+}
+
+.landing_btns {
+  font-size: 1.2em;
+  margin-left: 20%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cheeseboard {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cheeseboard_image {
+  width: 70%;
+}
+
+.cheeseboard_description {
+  width: 25%;
+}
+
+.cheeseboard_description h1 {
+  font-size: 5vw;
+}
+
+.cheeseboard_description p {
+  font-size:1.5vw;
+}
+
+.parent {
+  position: absolute;
+  top: 42%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.child {
+  width:20%;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+.text {
+  background-color: rgba(255,255,255,0.3);
+  padding: 15px;
+  color: #F5F4EF;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: absolute;
+}
+
+.cheesepic {
+  display: none;
+}
+
+.border {
+  background-color: #BAB2B5;
+}
+
+figure {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 5px;
+}
+
+.image {
+  width: 65%;
+  padding: 10px;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 120px;
 }
