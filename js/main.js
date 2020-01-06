@@ -14,11 +14,17 @@ $( document ).ready(function(){
   $(".option2").click(function(){
     $(this).addClass('border');
     $(".option2").not(this).removeClass('border');
+    $(".selection2.text").addClass('hidden');
+    $(".selection2.cheesepic").hide();
+    $(".selection2.cheesepic."+this.id).show();
     });
 
   $(".option3").click(function(){
     $(this).addClass('border');
     $(".option3").not(this).removeClass('border');
+    $(".selection3.text").addClass('hidden');
+    $(".selection3.cheesepic").hide();
+    $(".selection3.cheesepic."+this.id).show();
     });
 
 
