@@ -1,13 +1,29 @@
 body {
-  padding-top: 2rem;
   background-color: grey;
   margin-left: 0rem;
+}
+
+.container {
+  margin-left: 0%;
+  padding-top: 2rem;
 }
 
 .landing_text {
   display: block;
   text-align: center;
   position: relative;
+}
+
+.landing_text em {
+  font-size: 1.2em;
+}
+
+.landing_btns {
+  font-size: 1.2em;
+  margin-left: 20%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 * {
@@ -125,8 +141,4 @@ figure {
 
 .content {
   margin-left: 120px;
-}
-
-.container {
-  margin-left: 0%;
 }
