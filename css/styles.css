@@ -96,7 +96,7 @@ a {
 }
 
 .text {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.4);
   padding: 15px;
   color: #F5F4EF;
 }
@@ -122,6 +122,23 @@ figure {
     vertical-align: top;
     width: 30%;
     padding: 5px;
+}
+
+.about_mixture {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+  height: 42rem;
+  margin-bottom: 2rem;
+}
+
+.about_text {
+  width: 38%;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 .image {
