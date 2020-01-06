@@ -33,7 +33,7 @@ $( document ).ready(function(){
       $(".selection2.text").removeClass('hidden');
       $(".selection2.cheesepic."+this.id).hide();
     }
-    if ($(this).id = cheddar){
+    else if ($(this).id = cheddar){
       $(this).addClass('border');
       $(".option2").not(this).removeClass('border');
       $(".selection2.text").addClass('hidden');
