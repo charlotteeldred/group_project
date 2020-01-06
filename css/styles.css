@@ -54,6 +54,14 @@ a {
   width: 70%;
 }
 
+.navbar-custom {
+  background-color: #474853;
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text, .navbar-custom .navbar-nav .nav-link {
+    color: #EAE7DC;
+}
+
 .landing_image {
   width: 70%;
   padding-right: 2rem;
@@ -68,12 +76,12 @@ a {
   font-size: 5vw;
 }
 
-.cheeseboard_description.landing_text h1 {
+.cheeseboard_description.landing_text h1, .about_text h1 {
   font-size: 4.5vw;
   padding-right: 2rem;
 }
 
-.cheeseboard_description p {
+.cheeseboard_description p, .about_text p {
   font-size:1.5vw;
 }
 
