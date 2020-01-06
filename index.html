@@ -15,9 +15,16 @@
       <div class="cheeseboard_image">
         <img src="images/woodboard.jpg" alt="A picture of an empty cheeseboard" width="100%"/>
         <div class="parent">
-          <div class="child">Choose a <br> soft cheese</div>
-          <div class="child">Choose a <br> hard cheese</div>
-          <div class="child">Choose a <br> blue cheese</div>
+          <div class="child">
+            <p class="selection1 text">Choose a <br> soft cheese</p>
+            <img class="selection1 cheesepic" src="images/savoie.png" alt="A picture of savoie cheese" width="100%"/>
+          </div>
+          <div class="child">
+            <p class="selection2 text">Choose a <br> hard cheese</p>
+          </div>
+          <div class="child">
+            <p class="selection3 text">Choose a <br> blue cheese</p>
+          </div>
         </div>
       </div>
 
@@ -33,20 +40,47 @@
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <img class="option1" src="images/savoie.jpg" alt="A picture of savoie cheese" width="10%"/>
-          <img class="option1" src="images/savoie.jpg" alt="A picture of savoie cheese" width="10%"/>
-          <img class="option1" src="images/savoie.jpg" alt="A picture of savoie cheese" width="10%"/>
+        <div class="tab-pane fade show active imagecontainer" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <figure class="option1 containedimage">
+            <img class="image" src="images/savoie.png" alt="A picture of savoie cheese"/>
+            <figcaption><strong>Wigmore</strong><br><em>British, unpasteurised, ewes milk</em><br>Creamy and light in flavour<br>Intensity: 2/5</figcaption>
+          </figure>
+          <figure class="option1 containedimage">
+            <img class="image" src="images/savoie.png" alt="A picture of savoie cheese"/>
+            <figcaption><strong>Stinking Bishop</strong><br><em>English, washed rind, cows milk</em><br>Nutty, rich and a bit smelly<br>Intensity: 3/5</figcaption>
+          </figure>
+          <figure class="option1 containedimage">
+            <img class="image" src="images/savoie.png" alt="A picture of savoie cheese"/>
+            <figcaption><strong>Rigotte De Chévre</strong><br><em>French, goats milk</em><br>Smooth and packs a punch<br>Intensity: 3/5</figcaption>
+          </figure>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <img class="option2" src="images/cheddar.png" alt="A picture of cheddar cheese" width="10%"/>
-          <img class="option2" src="images/cheddar.jpg" alt="A picture of cheddar cheese" width="10%"/>
-          <img class="option2" src="images/cheddar.jpg" alt="A picture of cheddar cheese" width="10%"/>
+          <figure class="option2">
+            <img class="image" src="images/cheddar.png" alt="A picture of cheddar cheese"/>
+            <figcaption><strong>Rachel Goats</strong><br><em>English, goats milks</em><br>Semi-hard, light and well-rounded<br>Intensity: 2/5</figcaption>
+          </figure>
+          <figure class="option2">
+            <img class="image" src="images/cheddar.png" alt="A picture of cheddar cheese"/>
+            <figcaption><strong>Manchego</strong><br><em>Spanish, ewes milk</em><br>Fruity tang with a soft mouth feel<br>Intensity: 3/5</figcaption>
+          </figure>
+          <figure class="option2">
+            <img class="image" src="images/cheddar.png" alt="A picture of cheddar cheese"/>
+            <figcaption><strong>Vintage Cave-Aged Cheddar</strong><br><em>English, cows milk</em><br>Rich and crumbly with considerable bite<br>Intensity: 4/5</figcaption>
+          </figure>
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-          <img class="option3" src="images/gorgonzola.jpg" alt="A picture of gorgonzola cheese" width="10%"/>
-          <img class="option3" src="images/gorgonzola.jpg" alt="A picture of gorgonzola cheese" width="10%"/>
-          <img class="option3" src="images/gorgonzola.jpg" alt="A picture of gorgonzola cheese" width="10%"/>
+          <figure class="option3">
+            <img class="image" src="images/gorgonzola.png" alt="A picture of gorgonzola cheese"/>
+            <figcaption><strong>Blacksticks Blue</strong><br><em>English, cows milk</em><br>Semi-soft, creamy and full of flavour<br>Intensity: 4/5</figcaption>
+          </figure>
+          <figure class="option3">
+            <img class="image" src="images/gorgonzola.png" alt="A picture of gorgonzola cheese"/>
+            <figcaption><strong>Roquefort</strong><br><em>French, cows milk</em><br>Creamy, very rich and strong aftertaste<br>Intensity: 5/5</figcaption>
+          </figure>
+          <figure class="option3">
+            <img class="image" src="images/gorgonzola.png" alt="A picture of gorgonzola cheese"/>
+            <figcaption><strong>Stilton</strong><br><em>English, cows milk</em><br>Crumbly and nutty; it’s a classic for a reason<br>Intensity: 4/5</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -61,6 +95,21 @@
       <br>
 
         <img class="cheese-image" id="drag1" src="images/savoie.jpg" draggable="true" ondragstart="drag(event)"/>
+
+      <br>
+
+      <div>
+        <figure>
+          <img class="option1 containedimage" src="images/savoie.png" alt="A picture of savoie cheese" width="10%"/>
+          <figcaption>Wigmore<br>British, unpasteurised, ewes milk.<br>Creamy and light in flavour.<br>Intensity: 2/5</figcaption>
+        </figure>
+        <figure>
+          <img class="option1 containedimage" src="images/savoie.png" alt="A picture of savoie cheese" width="10%"/>
+        </figure>
+        <figure>
+          <img class="option1 containedimage" src="images/savoie.png" alt="A picture of savoie cheese" width="10%"/>
+        </figure>
+      </div>
 
       <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
       <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
