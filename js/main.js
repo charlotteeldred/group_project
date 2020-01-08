@@ -13,7 +13,7 @@ $( document ).ready(function(){
                       {name: "cheddar", lat: 51.28, lng: -2.76},
                       {name: "blacksticks", lat: 53.86, lng: -2.68},
                       {name: "roquefort", lat: 43.97, lng: 2.99},
-                      {name: "stilton", lat: 51.36, lng: -0.96},
+                      {name: "stilton", lat: 52.82, lng: -1.24},
                     ];
 
   map = new google.maps.Map(document.getElementById('map'), {
@@ -30,11 +30,25 @@ $( document ).ready(function(){
     markers.push(marker);
   }
 
+  // Attempts to add a marker to the map and push marker to the appropriate place in the array so that only one type of each cheese can be in the array
+  function addMarkernew(location,indexnew) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(location.lat, location.lng),
+      map: map
+    });
+    markers[indexnew] = (marker);
+  }
+
   // Sets the map on all markers in the array.
   function setMapOnAll(map) {
     for (var i = 0; i < markers.length; i++) {
       markers[i].setMap(map);
     }
+  }
+
+  // Removes the markers from the map, but keeps them in the array.
+  function clearMarkers() {
+    setMapOnAll(null);
   }
 
   // Sets the map bounds to ensure all markers in the array are visible
@@ -44,6 +58,19 @@ $( document ).ready(function(){
           bounds.extend(markers[i].getPosition());
       }
       map.fitBounds(bounds);
+  }
+
+  function produceMessage(){
+    var splicelist = [];
+    for (var i = 0; i < markers.length; i++){
+    	var indexnew = locations.findIndex(x => x.name === markers[i]);
+      if (locations[indexnew].category == locations[5].category && locations[indexnew].name != locations[5].name){
+      	splicelist.push(i);
+      }
+    }
+    for (var j = 0; j < splicelist.length; j++){
+    	markers.splice(j, 1);
+    }
   }
 
   $(".option1").click(function(){
@@ -59,7 +86,11 @@ $( document ).ready(function(){
       $(".selection1.cheesepic").hide();
       $(".selection1.cheesepic."+this.id).show();
       const index = locations.findIndex(x => x.name === this.id);
-      addMarker(locations[index]);
+      const indexnew = 0;
+      // addMarker(locations[index]);
+      clearMarkers();
+      addMarkernew(locations[index],indexnew);
+      setMapOnAll(map);
       setBounds();
     }
     });
@@ -77,7 +108,11 @@ $( document ).ready(function(){
       $(".selection2.cheesepic").hide();
       $(".selection2.cheesepic."+this.id).show();
       const index = locations.findIndex(x => x.name === this.id);
-      addMarker(locations[index]);
+      const indexnew = 1;
+      // addMarker(locations[index]);
+      clearMarkers();
+      addMarkernew(locations[index],indexnew);
+      setMapOnAll(map);
       setBounds();
     }
     });
@@ -95,7 +130,11 @@ $( document ).ready(function(){
       $(".selection3.cheesepic").hide();
       $(".selection3.cheesepic."+this.id).show();
       const index = locations.findIndex(x => x.name === this.id);
-      addMarker(locations[index]);
+      const indexnew = 2;
+      // addMarker(locations[index]);
+      clearMarkers();
+      addMarkernew(locations[index],indexnew);
+      setMapOnAll(map);
       setBounds();
     }
     });
