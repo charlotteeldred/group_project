@@ -9,7 +9,7 @@ $( document ).ready(function(){
   var order;
   const locations = [{category: "soft", name: "wigmore", lat: 51.36, lng: -0.96},
                       {category: "soft", name: "stinking_bishop", lat: 51.98, lng: -2.44},
-                      {category: "soft", name: "soft_goats", lat: 45.38, lng: 4.59},
+                      {category: "soft", name: "rigotte_de_chevre", lat: 45.38, lng: 4.59},
                       {category: "hard", name: "rachel_goat", lat: 51.15, lng: -2.54},
                       {category: "hard", name: "manchego", lat: 39.22, lng: -2.98},
                       {category: "hard", name: "cheddar", lat: 51.28, lng: -2.76},
@@ -23,12 +23,18 @@ $( document ).ready(function(){
           center: locations[5],
         });
 
+  map.setOptions({maxZoom:7});
+
   // Adds a marker to the map and push to the array.
   function addMarker(location) {
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(location.lat, location.lng),
       title: location.name,
-      // category: location.category,
+      label: {
+        color: 'grey',
+        fontWeight: 'bold',
+        text: location.name,
+      },
       map: map
     });
     markers.push(marker);
@@ -66,6 +72,19 @@ $( document ).ready(function(){
     var indexnew = locations.findIndex(x => x.name === markers[i].getTitle());
     console.log(indexnew,markers[i].getTitle());
       if ( locations[indexnew].category === location.category && locations[indexnew].name !== location.name) {
+        markers[i].setMap(null);
+        markers.splice(i, 1);
+        console.log([markers.length,markers[i].getTitle(),locations[indexnew].category,location.category]);
+      }
+    }
+  }
+
+  function removeSameMarker(location) {
+    console.log(markers.length-1);
+    for(var i = 0; i < markers.length; i++){
+    var indexnew = locations.findIndex(x => x.name === markers[i].getTitle());
+    console.log(indexnew,markers[i].getTitle());
+      if ( locations[indexnew].category === location.category && locations[indexnew].name === location.name) {
         markers[i].setMap(null);
         markers.splice(i, 1);
         console.log([markers.length,markers[i].getTitle(),locations[indexnew].category,location.category]);
