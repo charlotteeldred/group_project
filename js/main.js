@@ -58,6 +58,9 @@ $( document ).ready(function(){
       $(".selection1.text").addClass('hidden');
       $(".selection1.cheesepic").hide();
       $(".selection1.cheesepic."+this.id).show();
+      const index = locations.findIndex(x => x.name === this.id);
+      addMarker(locations[index]);
+      setBounds();
     }
     });
 
@@ -77,13 +80,6 @@ $( document ).ready(function(){
       addMarker(locations[index]);
       setBounds();
     }
-    // else {
-    //   $(this).addClass('border');
-    //   $(".option2").not(this).removeClass('border');
-    //   $(".selection2.text").addClass('hidden');
-    //   $(".selection2.cheesepic").hide();
-    //   $(".selection2.cheesepic."+this.id).show();
-    // }
     });
 
   $(".option3").click(function(){
@@ -98,6 +94,9 @@ $( document ).ready(function(){
       $(".selection3.text").addClass('hidden');
       $(".selection3.cheesepic").hide();
       $(".selection3.cheesepic."+this.id).show();
+      const index = locations.findIndex(x => x.name === this.id);
+      addMarker(locations[index]);
+      setBounds();
     }
     });
 
