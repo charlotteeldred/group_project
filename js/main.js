@@ -5,7 +5,7 @@ $( document ).ready(function(){
 
   var map;
   var markers = [];
-  const cheddar = {lat: 51.28, lng: -2.76};
+  const cheddar = {name: "cheddar", lat: 51.28, lng: -2.76};
 
   map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
@@ -33,13 +33,15 @@ $( document ).ready(function(){
       $(".selection2.text").removeClass('hidden');
       $(".selection2.cheesepic."+this.id).hide();
     }
-    else if ($(this).id = cheddar){
+    else if (this.id == cheddar.name){
       $(this).addClass('border');
       $(".option2").not(this).removeClass('border');
       $(".selection2.text").addClass('hidden');
       $(".selection2.cheesepic").hide();
       $(".selection2.cheesepic."+this.id).show();
       function addMarker(location) {
+        // map.addMarker(this.id.latLng);
+        // Adds a marker to the map and push to the array.
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(location.lat, location.lng),
           map: map
@@ -60,8 +62,6 @@ $( document ).ready(function(){
       $(".selection2.text").addClass('hidden');
       $(".selection2.cheesepic").hide();
       $(".selection2.cheesepic."+this.id).show();
-      // map.addMarker(this.id.latLng);
-      // Adds a marker to the map and push to the array.
     }
     });
 
