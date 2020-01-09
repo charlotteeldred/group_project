@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -57,7 +57,7 @@
                 <p class="selection1 text">Choose a <br> soft cheese</p>
                 <img class="selection1 cheesepic wigmore" src="images/wigmore.png" alt="A picture of Wigmore cheese" width="100%"/>
                 <img class="selection1 cheesepic stinking_bishop" src="images/stinking_bishop.png" alt="A picture of Stinking Bishop cheese" width="100%"/>
-                <img class="selection1 cheesepic soft_goats" src="images/soft_goats.png" alt="A picture of Rigotte De Chévre cheese" width="100%"/>
+                <img class="selection1 cheesepic rigotte_de_chevre" src="images/rigotte_de_chevre.png" alt="A picture of Rigotte De Chévre cheese" width="100%"/>
               </div>
               <div class="child">
                 <p class="selection2 text">Choose a <br> hard cheese</p>
@@ -99,8 +99,8 @@
               <img class="image" src="images/stinking_bishop.png" alt="A picture of Stinking Bishop cheese"/>
               <figcaption><strong>Stinking Bishop</strong><br><em>English, washed rind, cows milk</em><br>Nutty, rich and a bit smelly<br>Intensity: <img src="images/3of5.png" alt="3/5" width=40%/></figcaption>
             </figure>
-            <figure class="option1" id="soft_goats">
-              <img class="image" src="images/soft_goats.png" alt="A picture of Rigotte De Chévre cheese"/>
+            <figure class="option1" id="rigotte_de_chevre">
+              <img class="image" src="images/rigotte_de_chevre.png" alt="A picture of Rigotte De Chévre cheese"/>
               <figcaption><strong>Rigotte De Chévre</strong><br><em>French, goats milk</em><br>Smooth and packs a punch<br>Intensity: <img src="images/3of5.png" alt="3/5" width=40%/></figcaption>
             </figure>
           </div>
@@ -134,10 +134,17 @@
           </div>
         </div>
 
+        <br>
+
         <div class="cheeseboard">
 
           <div id="map" class="map"></div>
-          <div><h1>Your Cheese Map</h1></div>
+
+          <div class="cheeseboard_description">
+            <h1>YOUR<br>CHEESE<br>MAP</h1>
+            <br>
+            <p><em>Discover where your chosen<br>cheeses are made</em></p>
+          </div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOiGdhb4nzc6qEGTACgGHcqtS8gGnTlm4&callback=initMap"
         async defer></script>

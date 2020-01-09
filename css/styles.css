@@ -1,6 +1,5 @@
 body {
 
-
   background-color: #EAE7DC;
   padding-left: 0rem;
   color: #474853;
@@ -36,8 +35,8 @@ a {
 }
 
 .map {
-  height: 400px;
-  width: 50%
+  height: 500px;
+  width: 55%
 }
 
 .nav-tabs {
@@ -155,7 +154,7 @@ figure {
   justify-content: space-around;
   align-content: space-between;
   align-items: center;
-  height: 42rem;
+  height: 47vw;
   margin-bottom: 2rem;
 }
 
